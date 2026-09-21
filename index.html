@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e52727">
+  <meta name="description" content="Academia Força Total: musculação, aulas coletivas e acompanhamento para você alcançar seus objetivos.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Força Total Academia</title>
+</head>
+<body>
+  <header class="topo" id="inicio">
+    <a class="marca" href="#inicio" aria-label="Força Total Academia, início">
+      <span class="marca-icone" aria-hidden="true">FT</span>
+      <span>FORÇA <strong>TOTAL</strong></span>
+    </a>
+
+    <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#modalidades">Modalidades</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="instalar" id="instalarApp" type="button" hidden>Instalar app</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-fundo" role="img" aria-label="Equipamentos de musculação em uma academia moderna"></div>
+      <div class="hero-sombra"></div>
+      <div class="hero-conteudo">
+        <p class="chamada">SUA EVOLUÇÃO COMEÇA AQUI</p>
+        <h1>SUPERE SEUS<br><span>LIMITES</span></h1>
+        <p class="hero-texto">Estrutura completa, professores qualificados e treinos para todos os níveis.</p>
+        <div class="hero-acoes">
+          <a class="botao botao-principal" href="#planos">Conheça os planos</a>
+          <a class="botao botao-secundario" href="#contato">Agende uma aula</a>
+        </div>
+      </div>
+      <div class="hero-dados" aria-label="Destaques da academia">
+        <div><strong>15+</strong><span>professores</span></div>
+        <div><strong>40</strong><span>equipamentos</span></div>
+        <div><strong>6h–23h</strong><span>segunda a sábado</span></div>
+      </div>
+    </section>
+
+    <section class="secao modalidades" id="modalidades">
+      <div class="titulo-secao">
+        <p>ENCONTRE SEU RITMO</p>
+        <h2>Modalidades para cada objetivo</h2>
+      </div>
+      <div class="grade-modalidades">
+        <article class="modalidade destaque-card">
+          <span class="numero">01</span>
+          <h3>Musculação</h3>
+          <p>Treinos personalizados para força, hipertrofia, condicionamento e qualidade de vida.</p>
+        </article>
+        <article class="modalidade">
+          <span class="numero">02</span>
+          <h3>Funcional</h3>
+          <p>Aulas dinâmicas que trabalham resistência, agilidade e coordenação.</p>
+        </article>
+        <article class="modalidade">
+          <span class="numero">03</span>
+          <h3>Spinning</h3>
+          <p>Pedale com intensidade em aulas coletivas cheias de energia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao planos" id="planos">
+      <div class="titulo-secao">
+        <p>PLANOS SEM COMPLICAÇÃO</p>
+        <h2>Escolha como você quer treinar</h2>
+      </div>
+      <div class="grade-planos">
+        <article class="plano">
+          <p class="plano-nome">Start</p>
+          <p class="preco"><span>R$</span>79<small>,90/mês</small></p>
+          <ul>
+            <li>Musculação em horário livre</li>
+            <li>Avaliação física inicial</li>
+            <li>Aplicativo de treinos</li>
+          </ul>
+          <a class="botao botao-secundario" href="#contato">Quero este plano</a>
+        </article>
+
+        <article class="plano plano-principal">
+          <div class="selo">MAIS ESCOLHIDO</div>
+          <p class="plano-nome">Performance</p>
+          <p class="preco"><span>R$</span>109<small>,90/mês</small></p>
+          <ul>
+            <li>Musculação em horário livre</li>
+            <li>Todas as aulas coletivas</li>
+            <li>Avaliação física trimestral</li>
+            <li>Treino atualizado todo mês</li>
+          </ul>
+          <a class="botao botao-principal" href="#contato">Quero este plano</a>
+        </article>
+
+        <article class="plano">
+          <p class="plano-nome">Day Pass</p>
+          <p class="preco"><span>R$</span>25<small>/dia</small></p>
+          <ul>
+            <li>Acesso por um dia</li>
+            <li>Musculação e cardio</li>
+            <li>Uso de armários</li>
+          </ul>
+          <a class="botao botao-secundario" href="#contato">Experimentar</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <div class="contato-texto">
+        <p class="chamada">PRIMEIRA AULA GRATUITA</p>
+        <h2>Venha conhecer a Força Total</h2>
+        <p>Preencha seus dados. Nossa equipe entrará em contato para combinar o melhor horário.</p>
+        <div class="endereco">
+          <span>📍 Avenida Principal, 350 — São Paulo, SP</span>
+          <span>📞 (11) 99999-2026</span>
+        </div>
+      </div>
+
+      <form class="formulario" id="formularioContato">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" placeholder="(11) 99999-9999" required>
+
+        <label for="objetivo">Principal objetivo</label>
+        <select id="objetivo" name="objetivo" required>
+          <option value="">Selecione uma opção</option>
+          <option>Ganhar massa muscular</option>
+          <option>Perder gordura</option>
+          <option>Melhorar o condicionamento</option>
+          <option>Ter mais qualidade de vida</option>
+        </select>
+
+        <button class="botao botao-principal" type="submit">Agendar aula gratuita</button>
+        <p class="mensagem-formulario" id="mensagemFormulario" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="marca" href="#inicio">
+      <span class="marca-icone" aria-hidden="true">FT</span>
+      <span>FORÇA <strong>TOTAL</strong></span>
+    </a>
+    <p>© <span id="anoAtual"></span> Força Total Academia. Projeto escolar PWA.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
