@@ -1,4 +1,4 @@
-const CACHE_NAME = 'forca-total-v1';
+const CACHE_NAME = 'forca-total-v2';
 
 const ARQUIVOS_CACHE = [
   './',
@@ -21,6 +21,7 @@ self.addEventListener('install', (evento) => {
 
 self.addEventListener('fetch', (evento) => {
   if (evento.request.method !== 'GET') return;
+  if (new URL(evento.request.url).origin !== self.location.origin) return;
 
   evento.respondWith(
     caches.match(evento.request).then((resposta) => {
