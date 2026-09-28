@@ -7,6 +7,8 @@
   <meta name="description" content="Academia Força Total: musculação, aulas coletivas e acompanhamento para você alcançar seus objetivos.">
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Força Total Academia</title>
 </head>
@@ -52,36 +54,43 @@
     </section>
 
     <section class="secao modalidades" id="modalidades">
-      <div class="titulo-secao">
+      <div class="titulo-secao" data-aos="fade-up">
         <p>ENCONTRE SEU RITMO</p>
         <h2>Modalidades para cada objetivo</h2>
       </div>
-      <div class="grade-modalidades">
-        <article class="modalidade destaque-card">
+      <div class="swiper modalidades-carrossel" aria-label="Modalidades da academia">
+        <div class="swiper-wrapper grade-modalidades">
+        <article class="swiper-slide modalidade destaque-card">
           <span class="numero">01</span>
           <h3>Musculação</h3>
           <p>Treinos personalizados para força, hipertrofia, condicionamento e qualidade de vida.</p>
         </article>
-        <article class="modalidade">
+        <article class="swiper-slide modalidade">
           <span class="numero">02</span>
           <h3>Funcional</h3>
           <p>Aulas dinâmicas que trabalham resistência, agilidade e coordenação.</p>
         </article>
-        <article class="modalidade">
+        <article class="swiper-slide modalidade">
           <span class="numero">03</span>
           <h3>Spinning</h3>
           <p>Pedale com intensidade em aulas coletivas cheias de energia.</p>
         </article>
+        </div>
+      </div>
+      <div class="controles-modalidades" hidden>
+        <button class="carrossel-anterior" type="button" aria-label="Modalidade anterior">&#8592;</button>
+        <span class="carrossel-paginacao" aria-live="polite"></span>
+        <button class="carrossel-proximo" type="button" aria-label="Próxima modalidade">&#8594;</button>
       </div>
     </section>
 
     <section class="secao planos" id="planos">
-      <div class="titulo-secao">
+      <div class="titulo-secao" data-aos="fade-up">
         <p>PLANOS SEM COMPLICAÇÃO</p>
         <h2>Escolha como você quer treinar</h2>
       </div>
       <div class="grade-planos">
-        <article class="plano">
+        <article class="plano" data-aos="fade-up">
           <p class="plano-nome">Start</p>
           <p class="preco"><span>R$</span>79<small>,90/mês</small></p>
           <ul>
@@ -92,7 +101,7 @@
           <a class="botao botao-secundario" href="#contato">Quero este plano</a>
         </article>
 
-        <article class="plano plano-principal">
+        <article class="plano plano-principal" data-aos="fade-up" data-aos-delay="100">
           <div class="selo">MAIS ESCOLHIDO</div>
           <p class="plano-nome">Performance</p>
           <p class="preco"><span>R$</span>109<small>,90/mês</small></p>
@@ -105,7 +114,7 @@
           <a class="botao botao-principal" href="#contato">Quero este plano</a>
         </article>
 
-        <article class="plano">
+        <article class="plano" data-aos="fade-up" data-aos-delay="200">
           <p class="plano-nome">Day Pass</p>
           <p class="preco"><span>R$</span>25<small>/dia</small></p>
           <ul>
@@ -119,10 +128,10 @@
     </section>
 
     <section class="secao contato" id="contato">
-      <div class="contato-texto">
+      <div class="contato-texto" data-aos="fade-up">
         <p class="chamada">PRIMEIRA AULA GRATUITA</p>
         <h2>Venha conhecer a Força Total</h2>
-        <p>Preencha seus dados. Nossa equipe entrará em contato para combinar o melhor horário.</p>
+        <p>Experimente o formulário de agendamento. Esta página é um projeto escolar e não envia os dados.</p>
         <div class="endereco">
           <span>📍 Avenida Principal, 350 — São Paulo, SP</span>
           <span>📞 (11) 99999-2026</span>
@@ -159,6 +168,9 @@
     <p>© <span id="anoAtual"></span> Força Total Academia. Projeto escolar PWA.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
